@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+<!--  <remote fetch="ssh://wellcar/rkpx3selinux-k4.4-only-one-git/" name="git-remote"/> -->
+  <remote fetch="https://github.com/Saintway-Technology" name="git-remote"/>
+
+  <project name="px3se_linux_4.4" path="u-boot" remote="git-remote" revision="u-boot" />
+  <project name="px3se_linux_4.4" path="app/QLauncher" remote="git-remote" revision="app/QLauncher" />
+  <project name="px3se_linux_4.4" path="app/camera" remote="git-remote" revision="app/camera" />
+  <project name="px3se_linux_4.4" path="app/gallery" remote="git-remote" revision="app/gallery" />
+  <project name="px3se_linux_4.4" path="app/music" remote="git-remote" revision="app/music" />
+  <project name="px3se_linux_4.4" path="app/settings" remote="git-remote" revision="app/settings" />
+  <project name="px3se_linux_4.4" path="app/video" remote="git-remote" revision="app/video" />
+<!--<project name="px3se_linux_4.4" path="buildroot/download" remote="git-remote" revision="buildroot-download" />-->
+  <project name="px3se_linux_4.4" path="external/byte-unixbench" remote="git-remote" revision="external/byte-unixbench" />
+  <project name="px3se_linux_4.4" path="device/rockchip" remote="git-remote" revision="device/rockchip" >
+    <linkfile dest="mkfirmware.sh" src="px3se/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="px3se/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="px3se/BoardConfig.mk"/>
+  </project>
+  <project name="px3se_linux_4.4" path="docs" remote="git-remote" revision="docs" />
+  <project name="px3se_linux_4.4" path="external/adb" remote="git-remote" revision="external/adb" />
+  <project name="px3se_linux_4.4" path="external/audioservice" remote="git-remote" revision="external/audioservice" />
+  <project name="px3se_linux_4.4" path="external/ffmpeg" remote="git-remote" revision="external/ffmpeg" />
+  <project name="px3se_linux_4.4" path="external/libcutils" remote="git-remote" revision="external/libcutils" />
+  <project name="px3se_linux_4.4" path="external/liblog" remote="git-remote" revision="external/liblog" />
+  <project name="px3se_linux_4.4" path="external/mpv" remote="git-remote" revision="external/mpv" />
+  <project name="px3se_linux_4.4" path="external/powermanager" remote="git-remote" revision="external/powermanager" />
+  <project name="px3se_linux_4.4" path="external/rk_pcba_test" remote="git-remote" revision="external/rk_pcba_test" />
+  <project name="px3se_linux_4.4" path="external/rkdemos" remote="git-remote" revision="external/rkdemos" />
+  <project name="px3se_linux_4.4" path="external/rkupdate" remote="git-remote" revision="external/rkupdate" />
+  <project name="px3se_linux_4.4" path="external/rkwifibt" remote="git-remote" revision="external/rkwifibt" />
+  <project name="px3se_linux_4.4" path="external/ueventd" remote="git-remote" revision="external/ueventd" />
+  <project name="px3se_linux_4.4" path="external/gstreamer-rockchip" remote="git-remote" revision="external/gstreamer-rockchip" />
+  <project name="px3se_linux_4.4" path="external/gstreamer-rockchip-extra" remote="git-remote" revision="external/gstreamer-rockchip-extra" />
+  <project name="px3se_linux_4.4" path="external/libdrm-rockchip" remote="git-remote" revision="external/libdrm-rockchip" />
+  <project name="px3se_linux_4.4" path="external/libmali" remote="git-remote" revision="external/libmali" />
+  <project name="px3se_linux_4.4" path="external/linux-rga" remote="git-remote" revision="external/linux-rga" />
+  <project name="px3se_linux_4.4" path="external/punybench" remote="git-remote" revision="external/punybench" />
+  <project name="px3se_linux_4.4" path="external/recovery" remote="git-remote" revision="external/recovery" />
+  <project name="px3se_linux_4.4" path="rootfs" remote="git-remote" revision="rootfs" />
+  <project name="px3se_linux_4.4" path="tools" remote="git-remote" revision="tools" >
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/px3se-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/px3se-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/px3se-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/px3se-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/px3se-package-file"/>
+  </project>
+  <project name="px3se_linux_4.4" path="external/xserver" remote="git-remote" revision="external/xserver" />
+  <project name="px3se_linux_4.4" path="kernel" remote="git-remote" revision="kernel" />
+  <project name="px3se_linux_4.4" path="external/mpp" remote="git-remote" revision="external/mpp" />
+  <project name="px3se_linux_4.4" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="git-remote" revision="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" />
+  <project name="px3se_linux_4.4" path="buildroot" remote="git-remote" revision="buildroot" >
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="px3se_linux_4.4" path="rkbin" remote="git-remote" revision="rkbin" />
+</manifest>

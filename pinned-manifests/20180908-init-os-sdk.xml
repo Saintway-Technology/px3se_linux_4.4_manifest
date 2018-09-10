@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="ssh://wellcar/rkpx3selinux-k4.4-only-one-git/" name="git-remote"/>
+  
+  <project name="git" path="u-boot" remote="git-remote" revision="a63b1c5a6efc47d9de3c2441eef9cd163277edb8" upstream="u-boot"/>
+  <project name="git" path="app/QLauncher" remote="git-remote" revision="073678082e1563fa8eac1e617ac938fba7f8c7b9" upstream="app/QLauncher"/>
+  <project name="git" path="app/camera" remote="git-remote" revision="291866bcbabb706f48398883fbcc16d9808f7ef0" upstream="app/camera"/>
+  <project name="git" path="app/gallery" remote="git-remote" revision="e1266402c9abf78bf609432de3101d76c8c09c12" upstream="app/gallery"/>
+  <project name="git" path="app/music" remote="git-remote" revision="37bcb6a7be0818f87fea39fcde6e71b3549d1eb3" upstream="app/music"/>
+  <project name="git" path="app/settings" remote="git-remote" revision="ec4f67a2df498893539eb2435d14348d97ecc462" upstream="app/settings"/>
+  <project name="git" path="app/video" remote="git-remote" revision="08524b4fe70ec754c7e443ddc9aa5d284db5e186" upstream="app/video"/>
+  <project name="git" path="external/byte-unixbench" remote="git-remote" revision="05b1bd94e070d300f90e7112ef3fb4427cefac89" upstream="external/byte-unixbench"/>
+  <project name="git" path="device/rockchip" remote="git-remote" revision="dc532236f8b0a0099020bf3300f1530df6cfd85c" upstream="device/rockchip">
+    <linkfile dest="mkfirmware.sh" src="px3se/mkfirmware.sh"/>
+    <linkfile dest="build.sh" src="common/build.sh"/>
+    <linkfile dest="rkflash.sh" src="px3se/rkflash.sh"/>
+    <linkfile dest="device/rockchip/.BoardConfig.mk" src="px3se/BoardConfig.mk"/>
+  </project>
+  <project name="git" path="docs" remote="git-remote" revision="16e7e1f2af2e9429e39ace923973887e77fe0c85" upstream="docs"/>
+  <project name="git" path="external/adb" remote="git-remote" revision="5c57a1f9145eef7c0265b0a9bbc2379a377391c6" upstream="external/adb"/>
+  <project name="git" path="external/audioservice" remote="git-remote" revision="ec7efbf4cbb023a655228a1260fb83258fd667c1" upstream="external/audioservice"/>
+  <project name="git" path="external/ffmpeg" remote="git-remote" revision="c8b57d4333b1bc5c4125fdac8fbf4625c399fc9c" upstream="external/ffmpeg"/>
+  <project name="git" path="external/libcutils" remote="git-remote" revision="973b41906854a32379809b11138afbf7016563a0" upstream="external/libcutils"/>
+  <project name="git" path="external/liblog" remote="git-remote" revision="3867fe3c8f20f46d7109c2779ac48af2f16d6ea8" upstream="external/liblog"/>
+  <project name="git" path="external/mpv" remote="git-remote" revision="2739ea80b7137daf3f9a39fd3a2ddfd787a6b964" upstream="external/mpv"/>
+  <project name="git" path="external/powermanager" remote="git-remote" revision="d257b3c0a1eee68972296d975395f7bd8bfff7db" upstream="external/powermanager"/>
+  <project name="git" path="external/rk_pcba_test" remote="git-remote" revision="fa3d220a8a9e8c46250f8242e90c404d342d46a5" upstream="external/rk_pcba_test"/>
+  <project name="git" path="external/rkdemos" remote="git-remote" revision="0dd2aaf0f5e13d5ef45c5350b949ece39e617ab5" upstream="external/rkdemos"/>
+  <project name="git" path="external/rkupdate" remote="git-remote" revision="72ffdc96ef557594dc4c22ad8ab9f62fe90195ab" upstream="external/rkupdate"/>
+  <project name="git" path="external/rkwifibt" remote="git-remote" revision="829e3e8485737436bf286a896cd16a49576d4af8" upstream="external/rkwifibt"/>
+  <project name="git" path="external/ueventd" remote="git-remote" revision="6131251e513d708fde4156639f2707decbc6fb29" upstream="external/ueventd"/>
+  <project name="git" path="external/gstreamer-rockchip" remote="git-remote" revision="aadf6ab77c53055f8be85c18bace6918e04e3f9c" upstream="external/gstreamer-rockchip"/>
+  <project name="git" path="external/gstreamer-rockchip-extra" remote="git-remote" revision="ab5f747dcb82ee37e6d2cc370c5e53a39d8ddacc" upstream="external/gstreamer-rockchip-extra"/>
+  <project name="git" path="external/libdrm-rockchip" remote="git-remote" revision="ea6c1f85b8691f0c2ecda16fb9919eeec3dafd48" upstream="external/libdrm-rockchip"/>
+  <project name="git" path="external/libmali" remote="git-remote" revision="8c54a9d2849b69c09e69bec79922467377be4e44" upstream="external/libmali"/>
+  <project name="git" path="external/linux-rga" remote="git-remote" revision="b586e307e4c9336f52bc987c6b09e20c2a1ad295" upstream="external/linux-rga"/>
+  <project name="git" path="external/punybench" remote="git-remote" revision="c050715684a5dde3a4fc818f3de816a407fdb2de" upstream="external/punybench"/>
+  <project name="git" path="external/recovery" remote="git-remote" revision="60b357c867ab9495124f1e046f296c19ae8c2724" upstream="external/recovery"/>
+  <project name="git" path="rootfs" remote="git-remote" revision="4a011cef4839d5892a6362ca1776ad6452595148" upstream="rootfs"/>
+  <project name="git" path="tools" remote="git-remote" revision="4a05d3f73af1b74a5da05d222a7ea4764c9735b5" upstream="tools">
+    <linkfile dest="tools/windows/AndroidTool/AndroidTool_Release/config.cfg" src="windows/AndroidTool/AndroidTool_Release/px3se-config.cfg"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/package-file" src="windows/AndroidTool/rockdev/px3se-package-file"/>
+    <linkfile dest="tools/windows/AndroidTool/rockdev/mkupdate.bat" src="windows/AndroidTool/rockdev/px3se-mkupdate.bat"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/mkupdate.sh" src="linux/Linux_Pack_Firmware/rockdev/px3se-mkupdate.sh"/>
+    <linkfile dest="tools/linux/Linux_Pack_Firmware/rockdev/package-file" src="linux/Linux_Pack_Firmware/rockdev/px3se-package-file"/>
+  </project>
+  <project name="git" path="external/xserver" remote="git-remote" revision="2baabe700b59f5a2681558c6a764155102325974" upstream="external/xserver"/>
+  <project name="git" path="kernel" remote="git-remote" revision="fe8cc7236312ce967cfd51691aa3960fd50720e0" upstream="kernel"/>
+  <project name="git" path="external/mpp" remote="git-remote" revision="d2b06f4aa944f6d4351779bed1d56d97b804fa54" upstream="external/mpp"/>
+  <project name="git" path="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf" remote="git-remote" revision="dd4df7dff4f1df65d78939a958b760a79e3650a1" upstream="prebuilts/gcc/linux-x86/arm/gcc-linaro-6.3.1-2017.05-x86_64_arm-linux-gnueabihf"/>
+  <project name="git" path="buildroot" remote="git-remote" revision="920a72dda7e4e6de16c28a1e618960dc6e2cca60" upstream="buildroot">
+    <linkfile dest="Makefile" src="build/Makefile"/>
+    <linkfile dest="envsetup.sh" src="build/envsetup.sh"/>
+  </project>
+  <project name="git" path="rkbin" remote="git-remote" revision="cd2320cd296d89665e04ebaddbdc1aa8935cae95" upstream="rkbin"/>
+</manifest>
